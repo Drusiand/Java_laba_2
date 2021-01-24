@@ -1,0 +1,12 @@
+Reader = Reader;
+Writer = Writer;
+Executor1 = Executor;
+Executor2 = Executor;
+
+cfgReader = configs\worker's_configs\my_reader_cfg.txt;
+cfgWriter = configs\worker's_configs\my_writer_cfg.txt;
+cfgExecutor1 = configs\worker's_configs\my_exe_encode_cfg.txt;
+cfgExecutor2 = configs\worker's_configs\my_exe_decode_cfg.txt;
+
+input = ..\input.txt;
+output = ..\decoded.txt;

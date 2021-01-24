@@ -1,0 +1,10 @@
+Reader = Reader;
+Writer = Writer;
+Executor1 = ru.spbstu.timofeev.workers.Substitutor;
+
+cfgReader = configs\worker's_configs\my_reader_cfg.txt;
+cfgWriter = configs\worker's_configs\my_writer_cfg.txt;
+cfgExecutor1 = configs\worker's_configs\foreign_exe_cfg.txt;
+
+input = ..\input.txt;
+output = ..\decoded.txt;

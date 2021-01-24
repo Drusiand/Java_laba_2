@@ -1,0 +1,1 @@
+table_file = configs/worker's_configs/table.txt

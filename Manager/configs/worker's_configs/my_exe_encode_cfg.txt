@@ -1,0 +1,4 @@
+rightBorder=1;
+leftBorder=-1;
+eps=1E-14;
+exeMode = -e;

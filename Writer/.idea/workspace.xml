@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Writer:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04c91841-845f-4dfe-9004-d1573227fa0c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ltLlEctpZtPaDpdbU7A8qznUuq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/Parser.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04c91841-845f-4dfe-9004-d1573227fa0c" name="Default Changelist" comment="" />
+      <created>1608411593165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608411593165</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="507" y="173" key="FileChooserDialogImpl" timestamp="1611437492497">
+      <screen x="66" y="0" width="1470" height="864" />
+    </state>
+    <state x="504" y="173" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1608687190749" />
+    <state x="507" y="173" key="FileChooserDialogImpl/66.0.1470.864@66.0.1470.864" timestamp="1611437492497" />
+    <state x="283" y="6" key="SettingsEditor" timestamp="1611437493859">
+      <screen x="66" y="0" width="1470" height="864" />
+    </state>
+    <state x="280" y="6" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1608688951102" />
+    <state x="283" y="6" key="SettingsEditor/66.0.1470.864@66.0.1470.864" timestamp="1611437493859" />
+    <state x="360" y="180" key="caller.chooser.dialog" timestamp="1608688712598">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="360" y="180" key="caller.chooser.dialog/62.0.1474.864@62.0.1474.864" timestamp="1608688712598" />
+    <state x="240" y="52" key="new project wizard" timestamp="1608411629008">
+      <screen x="62" y="0" width="1474" height="864" />
+    </state>
+    <state x="240" y="52" key="new project wizard/62.0.1474.864@62.0.1474.864" timestamp="1608411629008" />
+  </component>
+</project>
