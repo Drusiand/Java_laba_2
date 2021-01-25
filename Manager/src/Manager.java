@@ -3,6 +3,7 @@ import ru.spbstu.pipeline.IPipelineStep;
 import ru.spbstu.pipeline.IWriter;
 import ru.spbstu.pipeline.IConfigurable;
 import ru.spbstu.pipeline.RC;
+import sun.rmi.runtime.Log;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;
@@ -14,7 +15,8 @@ public class Manager {
     IPipelineStep pipelineStart;
     static final ManagerGrammar grammar = new ManagerGrammar();
     static final Logger logger = Logger.getLogger(Manager.class.getName());
-
+    FileInputStream inputStream;
+    FileOutputStream outputStream;
 
 
     public Manager(String cfgPath) {
@@ -112,11 +114,12 @@ public class Manager {
     private RC setInputStream(IReader reader, String inputPath){
 
         try{
-            FileInputStream file = new FileInputStream(inputPath);
+            inputStream = new FileInputStream(inputPath);
             System.out.println();
-            return reader.setInputStream(file);
+            return reader.setInputStream(inputStream);
         }
         catch (FileNotFoundException e) {
+            inputStream = null;
             logger.severe(LogMsg.INVALID_INPUT_STREAM.msg);
             return RC.CODE_INVALID_INPUT_STREAM;
         }
@@ -125,9 +128,10 @@ public class Manager {
     private RC setOutputStream(IWriter writer, String outputPath){
 
         try{
-            FileOutputStream file = new FileOutputStream(outputPath);
-            return writer.setOutputStream(file);
+            outputStream = new FileOutputStream(outputPath);
+            return writer.setOutputStream(outputStream);
         } catch (FileNotFoundException ex) {
+            outputStream = null;
             logger.severe(LogMsg.INVALID_OUTPUT_STREAM.msg);
             return RC.CODE_SUCCESS;
         }
@@ -155,6 +159,19 @@ public class Manager {
         }
         RC rc = pipelineStart.execute(null);
         logger.info(rc.toString());
+        pipelineStart = null;
+        try {
+            inputStream.close();
+        } catch (IOException e) {
+            logger.severe(LogMsg.INVALID_INPUT_STREAM.msg);
+            rc = RC.CODE_INVALID_INPUT_STREAM;
+        }
+        try{
+            outputStream.close();
+        } catch (IOException e) {
+            logger.severe(LogMsg.INVALID_OUTPUT_STREAM.msg);
+            rc = RC.CODE_INVALID_OUTPUT_STREAM;
+        }
         return rc;
     }
 }
